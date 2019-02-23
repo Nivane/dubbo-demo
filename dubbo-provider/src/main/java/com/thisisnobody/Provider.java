@@ -11,7 +11,6 @@ import java.util.concurrent.CountDownLatch;
 public class Provider {
     public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(Provider.class, args);
-
         new CountDownLatch(1).await();
     }
 }
